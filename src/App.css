@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    width: 100%;
+    background-color:  hsl(0, 0%, 98%);
+    padding: 65px 120px 80px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title {
+    width: 550px;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.title h1 span {
+    font-weight: 200;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title h1 {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+
+.title p {
+    color: hsl(229, 6%, 66%);
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.wrapCard {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.middle-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
