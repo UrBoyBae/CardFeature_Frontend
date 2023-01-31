@@ -10,6 +10,7 @@ body {
 }
 
 .container {
+    height: auto;
     width: 100%;
     background-color:  hsl(0, 0%, 98%);
     padding: 65px 120px 80px 120px;
@@ -41,7 +42,7 @@ body {
 .title p {
     color: hsl(229, 6%, 66%);
     font-weight: 400;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .wrapCard {
@@ -54,4 +55,18 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+@media screen and (max-width: 500px) {
+    .title {
+        width: 330px;
+    }
+
+    .title h1 {
+        font-size: 26px;
+    }
+
+    .wrapCard {
+        flex-direction: column;
+    }
 }
